@@ -3,7 +3,7 @@
 # Run as root on a fresh Arch install.
 
 dotfilesrepo="https://github.com/majamin/dotfiles.git"
-progsfile="$(dirname "$0")/packages.csv"
+progsfile="$(realpath "$(dirname "$0")/packages.csv")"
 aurhelper="yay"
 export TERM=ansi
 
@@ -103,7 +103,7 @@ enableservices() {
 	systemctl enable bluetooth
 	systemctl enable fstrim.timer
 	systemctl enable ufw
-	systemctl enable --now syncthing@"$name"
+	systemctl enable syncthing@"$name"
 }
 
 sanitychecks() {
@@ -143,14 +143,12 @@ sanitychecks() {
 	ls /boot/initramfs-linux*.img >/dev/null 2>&1 || \
 		warnings="$warnings\n- No initramfs found in /boot (mkinitcpio not run?)"
 
-	[ -d /run/systemd/system ] && \
-		warnings="$warnings\n- systemd is running — are you inside arch-chroot?"
-
-	[ -n "$warnings" ] && \
+	if [ -n "$warnings" ]; then
 		whiptail --title "Warnings — prerequisites may not be met" \
 			--yes-button "Continue anyway" --no-button "Abort" \
 			--yesno "The following issues were detected:$warnings\n\nSee PRE-INSTALL.md for guidance." \
 			20 70 || { clear; exit 1; }
+	fi
 }
 
 finalize() {
