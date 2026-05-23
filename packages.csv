@@ -1,0 +1,110 @@
+# tag,program,description
+# (blank) = official repos (via yay), A = AUR
+
+# --- Base system ---
+,sudo,"Privilege escalation"
+,git,"Version control"
+,curl,"HTTP client"
+,wget,"File downloader"
+,unzip,"Archive extraction"
+,bc,"Calculator (used in scripts)"
+,fd,"Fast file finder"
+,fzf,"Fuzzy finder"
+,jq,"JSON processor (used in scripts)"
+,man-db,"Man page viewer"
+,man-pages,"Man pages"
+,openssh,"SSH client/server"
+,reflector,"Mirror ranking"
+
+# --- Network ---
+,networkmanager,"Network management daemon"
+,network-manager-applet,"NM tray icon"
+,nm-connection-editor,"NM GUI editor"
+
+# --- Hardware / ThinkPad ---
+,mesa,"OpenGL"
+,vulkan-intel,"Intel Vulkan driver"
+,intel-media-driver,"Intel VA-API hardware decode"
+,sof-firmware,"Sound Open Firmware (ThinkPad audio)"
+,fwupd,"Firmware updater"
+,bolt,"Thunderbolt manager"
+,tlp,"Laptop power management"
+,tlp-rdw,"TLP radio device wizard"
+,fprintd,"Fingerprint reader daemon"
+,brightnessctl,"Brightness control"
+
+# --- Security ---
+,sbctl,"Secure boot key manager"
+,tpm2-tss,"TPM2 software stack"
+,ufw,"Firewall"
+,keepassxc,"Password manager"
+,pass,"Password store"
+,pass-otp,"OTP support for pass"
+,passff-host,"Firefox/pass bridge"
+
+# --- Hyprland desktop ---
+,hyprland,"Wayland compositor"
+,hyprlock,"Screen locker"
+,hyprpaper,"Wallpaper daemon"
+,waybar,"Status bar"
+,dunst,"Notification daemon"
+,swayidle,"Idle management"
+,wl-clipboard,"Clipboard (wl-copy / wl-paste)"
+,slurp,"Region selector"
+,grim,"Screenshot tool"
+,swappy,"Screenshot annotation"
+,xdg-desktop-portal-hyprland,"XDG portal"
+A,tofi,"App launcher"
+A,wlogout,"Logout screen"
+A,ghostty,"Terminal emulator"
+A,cliphist,"Clipboard history"
+A,hyprpicker,"Color picker"
+
+# --- Audio ---
+,pipewire,"Audio/video server"
+,pipewire-alsa,"ALSA via PipeWire"
+,pipewire-pulse,"PulseAudio replacement"
+,wireplumber,"PipeWire session manager"
+,pamixer,"Volume control CLI"
+,pavucontrol,"Volume control GUI"
+
+# --- Bluetooth ---
+,bluez,"Bluetooth stack"
+,bluez-utils,"Bluetooth CLI tools"
+
+# --- Display manager ---
+,sddm,"Login manager"
+
+# --- Shell ---
+,zsh,"Z shell"
+,zsh-autosuggestions,"Zsh autosuggestions"
+,zsh-syntax-highlighting,"Zsh syntax highlighting"
+,tmux,"Terminal multiplexer"
+A,zsh-vi-mode,"Zsh vi mode"
+
+# --- Editor ---
+,neovim,"Text editor"
+,stylua,"Lua formatter"
+
+# --- File management ---
+,dolphin,"File manager"
+,gvfs,"Virtual filesystem support"
+,tumbler,"Thumbnail service"
+,ffmpegthumbnailer,"Video thumbnails"
+,webp-pixbuf-loader,"WebP image support"
+
+# --- Fonts ---
+,ttf-fira-sans,"Fira Sans (UI font)"
+,ttf-firacode-nerd,"Fira Code Nerd Font (terminal)"
+,noto-fonts,"Noto fallback fonts"
+,ttf-ibm-plex,"IBM Plex font family"
+A,inter-font,"Inter UI font"
+A,ttf-ibmplex-mono-nerd,"IBM Plex Mono Nerd Font"
+
+# --- Browser ---
+,firefox,"Web browser"
+
+# --- Sync ---
+,syncthing,"File sync"
+
+A,yay,"AUR helper"
